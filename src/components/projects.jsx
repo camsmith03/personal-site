@@ -62,9 +62,7 @@ function Projects() {
                 id="card2"
                 style={{ backgroundColor: "#ffffff" }}
                 onClick={() =>
-                  redirectTo(
-                    "https://github.com/camsmith03/brokercheck-web-scraper",
-                  )
+                  redirectTo("https://github.com/camsmith03/personal-site")
                 }
               >
                 <Card.Img variant="top" src="/homepage.png" />
