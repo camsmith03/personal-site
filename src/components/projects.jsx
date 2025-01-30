@@ -110,9 +110,7 @@ function Projects() {
                 id="card4"
                 style={{ backgroundColor: "#ffffff" }}
                 onClick={() =>
-                  redirectTo(
-                    "https://github.com/camsmith03/ChessMinimaxAlgorithm",
-                  )
+                  redirectTo("https://github.com/camsmith03/Java-Wordle-Solver")
                 }
               >
                 <Card.Img variant="top" src="/img/wordle.jpeg" />
