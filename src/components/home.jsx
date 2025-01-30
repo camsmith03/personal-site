@@ -24,8 +24,8 @@ function Home() {
           them to build robust and scalable applications.
           <br />
           <br />
-          My academic focus is on the design and development of operating
-          systems, with an interest in kernel design.
+          My academic focus is on the design and optimization of operating
+          systems, with an interest in kernel development.
         </p>
         <br />
       </div>

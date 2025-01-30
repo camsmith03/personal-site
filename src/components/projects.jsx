@@ -40,7 +40,7 @@ function Projects() {
                   )
                 }
               >
-                <Card.Img variant="top" src="/chessAI.png" />
+                <Card.Img variant="top" src="/img/chessAI.png" />
                 <Card.Body>
                   <Card.Title>Chess AI</Card.Title>
                   <Card.Text>
@@ -65,7 +65,7 @@ function Projects() {
                   redirectTo("https://github.com/camsmith03/personal-site")
                 }
               >
-                <Card.Img variant="top" src="/homepage.png" />
+                <Card.Img variant="top" src="/img/homepage.jpg" />
                 <Card.Body>
                   <Card.Title>This Website</Card.Title>
                   <Card.Text>
@@ -89,7 +89,7 @@ function Projects() {
                   )
                 }
               >
-                <Card.Img variant="top" src="/webscraper.png" />
+                <Card.Img variant="top" src="/img/webscraper.jpg" />
                 <Card.Body>
                   <Card.Title>FINRA's BrokerCheck&#174; Web Scraper</Card.Title>
                   <Card.Text>
@@ -115,7 +115,7 @@ function Projects() {
                   )
                 }
               >
-                <Card.Img variant="top" src="/wordle.jpeg" />
+                <Card.Img variant="top" src="/img/wordle.jpeg" />
                 <Card.Body>
                   <Card.Title>Java Wordle Solver</Card.Title>
                   <Card.Text>
