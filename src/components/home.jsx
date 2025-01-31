@@ -1,5 +1,3 @@
-import "../body.css";
-
 function Home() {
   const yearsOfExperience = new Date().getFullYear() - 2017;
 
@@ -10,14 +8,14 @@ function Home() {
         <h1 className="top-header">Hi my name is Cameron Smith</h1>
         <br />
       </div>
-      <div className="large-blurb">
+      <div style={{ textSize: "2.071em" }}>
         <p>
           I'm a fourth year CS student at Virginia Tech studying OS kernel
           enginnering, backend Java programming, full-stack development, and
           AI/ML.
         </p>
       </div>
-      <div className="small-blurb">
+      <div style={{ textSize: "1.701em" }}>
         <p>
           With over {yearsOfExperience}+ years of hands-on software development
           experience, I've refined my skills across the entire stack and applied

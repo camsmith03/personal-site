@@ -2,11 +2,10 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
-import "../body.css";
 
 function Projects() {
   const redirectTo = (url) => {
-    location.href = url;
+    window.open(url, "_blank");
   };
   const handleHoverOver = (cardId) => {
     var card = document.getElementById(cardId);
@@ -77,7 +76,9 @@ function Projects() {
                 <Card.Body>
                   <Card.Title>This Website</Card.Title>
                   <Card.Text>
-                    Written using ReactJS and self-hosted on my home server.
+                    Written using ReactJS and self-hosted on my home Debian
+                    server. Utilizes image prefetching and priority frontend
+                    rendering for a seamless experience.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -134,7 +135,8 @@ function Projects() {
                   <Card.Title>Java Wordle Solver</Card.Title>
                   <Card.Text>
                     Solves the daily "Wordle" puzzle via process of elemination,
-                    written in Java.
+                    written in Java. Slight improvements led to an average of
+                    3.76 guesses, only 0.35 off from the MIT research team.
                   </Card.Text>
                 </Card.Body>
               </Card>
