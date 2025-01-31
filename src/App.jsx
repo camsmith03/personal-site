@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./body.css";
 
-import Navbar from "./components/navbar.jsx";
+import Navigation from "./components/navigation.jsx";
 import Home from "./components/home.jsx";
 import Projects from "./components/projects.jsx";
 import Contact from "./components/contact.jsx";
@@ -10,7 +10,7 @@ import Footer from "./components/footer.jsx";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
