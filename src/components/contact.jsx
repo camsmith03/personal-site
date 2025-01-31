@@ -11,10 +11,11 @@ function Contact() {
         <br />
       </div>
       <div>
-        <p style={{ fontSize: "1.5em" }}>
+        <p style={{ fontSize: "1.2em" }}>
           Email: <a href="mailto:camerons03@vt.edu">camerons03@vt.edu</a>
           <br />
           Phone: <a href="tel:+12156806410">(215) 680-6410</a>
+          <br />
           <br />
         </p>
       </div>

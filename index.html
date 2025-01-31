@@ -4,16 +4,46 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="canonical" href="https://cameronwsmith.com/" />
-    <!-- prefetching project page images to eliminate page switch lag -->
-    <link rel="preload" href="/img/chessAI.png" as="image" />
-    <link rel="preload" href="/img/wordle.jpeg" as="image" />
-    <link rel="preload" href="/img/homepage.jpg" as="image" />
-    <link rel="preload" href="/img/webscraper.jpg" as="image" />
-
     <meta name="description" content="Cameron Smith's personal homepage" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- embedded CSS to speed up load time -->
+    <script type="text/javascript">
+      /* 
+         Prefetch images only after the first paint has occurred. This will 
+         append link tags to the head being set to preload, only after the home 
+         page itself has loaded.  
+
+         This heavily reduces wait time from the user's perspective by 
+         prioritizing the loaded UI, then pre-fetching the images to make tab 
+         switch far more efficient. It keeps the low overhead from the static 
+         site, while reducing initial packet transmission for everything but 
+         necessary. */
+      document.addEventListener("DOMContentLoaded", (event) => {
+        // images to prefetch after first paint
+        const images = [
+          "/img/chessAI.webp",
+          "/img/wordle.webp",
+          "/img/homepage.webp",
+          "/img/webscraper.webp",
+        ];
+
+        // Add the link element to the document
+        function addLink(image) {
+          var imgLink = document.createElement("link");
+          imgLink.rel = "preload";
+          imgLink.href = image;
+          imgLink.as = "image";
+          document.head.appendChild(imgLink);
+        }
+
+        for (let i = 0; i < images.length; i++) {
+          addLink(images[i]);
+        }
+      });
+    </script>
+
+    <!-- embedded CSS to speed up load time. CSP not as big a concern since site    
+         is static -->
     <style>
       #root {
         width: 95vw;
@@ -21,7 +51,7 @@
         margin: 0px auto;
         padding: 2rem;
         text-align: left;
-        font-family: "Courier New", "monospace";
+        font-family: "Courier New", monospace;
         font-synthesis: none;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
@@ -35,7 +65,7 @@
       }
       img {
         width: 400px;
-        height: 465px;
+        height: 400px;
       }
     </style>
     <title>Cameron Smith</title>

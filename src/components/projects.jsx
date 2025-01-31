@@ -42,7 +42,7 @@ function Projects() {
                 <Card.Img
                   alt="Command line chess algorithm"
                   variant="top"
-                  src="/img/chessAI.png"
+                  src="/img/chessAI.webp"
                 />
                 <Card.Body>
                   <Card.Title>Chess AI</Card.Title>
@@ -71,7 +71,7 @@ function Projects() {
                 <Card.Img
                   alt="Home page of current site"
                   variant="top"
-                  src="/img/homepage.jpg"
+                  src="/img/homepage.webp"
                 />
                 <Card.Body>
                   <Card.Title>This Website</Card.Title>
@@ -101,7 +101,7 @@ function Projects() {
                 <Card.Img
                   alt="Image of GitHub page for webscraper"
                   variant="top"
-                  src="/img/webscraper.jpg"
+                  src="/img/webscraper.webp"
                 />
                 <Card.Body>
                   <Card.Title>FINRA's BrokerCheck&#174; Web Scraper</Card.Title>
@@ -129,14 +129,14 @@ function Projects() {
                 <Card.Img
                   alt="Image of wordle bot accuracy distribution"
                   variant="top"
-                  src="/img/wordle.jpeg"
+                  src="/img/wordle.webp"
                 />
                 <Card.Body>
                   <Card.Title>Java Wordle Solver</Card.Title>
                   <Card.Text>
                     Solves the daily "Wordle" puzzle via process of elemination,
-                    written in Java. Slight improvements led to an average of
-                    3.76 guesses, only 0.35 off from the MIT research team.
+                    written in Java. Achieves an average of 3.76 guesses, only
+                    0.35 off from MIT's research team.
                   </Card.Text>
                 </Card.Body>
               </Card>
