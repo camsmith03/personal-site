@@ -1,8 +1,11 @@
-# React + Vite
+# Personal Website 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal site written in ReactJS, configured using Vite, and proxied via nginx over my local self-hosted Debian server. 
 
-Currently, two official plugins are available:
+Find it at [cameronwsmith.com](https://cameronwsmith.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Optimizations
+
+Images and Bootstrap CSS/JS files are deferred from prefetching until content is initially loaded to minimize FCP and prevent pop-in on tab switch. 
+
+See full benchmark: [https://gtmetrix.com/reports/cameronwsmith.com/LOksT3xR/](https://gtmetrix.com/reports/cameronwsmith.com/LOksT3xR/)
