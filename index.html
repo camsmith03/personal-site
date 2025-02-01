@@ -7,6 +7,15 @@
     <meta name="description" content="Cameron Smith's personal homepage" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- LinkedIn's annoying requirements to allow linking on profile -->
+    <meta property="og:title" content="Cameron Smith" />
+    <meta
+      property="og:image"
+      content="https://ftp.cameronwsmith.com/misc/linkedinpreview.jpg"
+    />
+    <meta property="og:description" content="Cameron Smith's personal site" />
+    <meta property="og:url" content="https://cameronwsmith.com" />
+
     <script type="text/javascript">
       /* 
          Prefetch images only after the first paint has occurred. This will 
@@ -39,6 +48,16 @@
         for (let i = 0; i < images.length; i++) {
           addLink(images[i]);
         }
+
+        // In addition, dynamically add the bootstrap script and css elements
+        var bootstrapScript = document.createElement("script");
+        bootstrapScript.type = "module";
+        bootstrapScript.src = "/assets/index-XdajlBN6.js";
+        var bootstrapStyle = document.createElement("link");
+        bootstrapStyle.rel = "stylesheet";
+        bootstrapStyle.href = "/assets/index-DnVUw_vK.css";
+        document.head.appendChild(bootstrapScript);
+        document.head.appendChild(bootstrapStyle);
       });
     </script>
 
