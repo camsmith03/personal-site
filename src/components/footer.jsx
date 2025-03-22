@@ -1,4 +1,7 @@
 import { SocialIcon } from "react-social-icons/component";
+/* import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col"; */
 import "react-social-icons/github";
 import "react-social-icons/linkedin";
 import "react-social-icons/instagram";
@@ -7,7 +10,13 @@ import "react-social-icons/facebook";
 
 function Footer() {
   return (
-    <div align="center">
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <SocialIcon
         url="www.github.com"
         href="https://www.github.com/camsmith03"

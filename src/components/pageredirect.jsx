@@ -18,16 +18,22 @@ function PageNotFound() {
   });
 
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <br />
       <h1 className="top-header">Page not found. Redirecting...</h1>
       <br />
-      <p id="redirectParaTag" align="center" style={{ visibility: "hidden" }}>
+      <p id="redirectParaTag" style={{ visibility: "hidden" }}>
         <a href="https://cameronwsmith.com">Press here to go home</a>
         <br />
         <br />
       </p>
-    </>
+    </div>
   );
 }
 

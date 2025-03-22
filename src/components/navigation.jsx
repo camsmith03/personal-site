@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 function Navigation() {
+  const location = useLocation();
+
   return (
     <Navbar collapseOnSelect="true" expand="lg" className="bg-body-tertiary">
       <Container>
@@ -12,13 +14,21 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link eventKey="1" as={Link} to="/">
+            <Nav.Link as={Link} to="/" active={location.pathname === "/"}>
               Home
             </Nav.Link>
-            <Nav.Link eventKey="2" as={Link} to="/projects">
+            <Nav.Link
+              as={Link}
+              to="/projects"
+              active={location.pathname === "/projects"}
+            >
               Projects
             </Nav.Link>
-            <Nav.Link eventKey="3" as={Link} to="/contact">
+            <Nav.Link
+              as={Link}
+              to="/contact"
+              active={location.pathname === "/contact"}
+            >
               Contact
             </Nav.Link>
           </Nav>

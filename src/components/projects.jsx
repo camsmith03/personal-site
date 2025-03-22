@@ -1,7 +1,6 @@
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
 
 function Projects() {
   const redirectTo = (url) => {
@@ -104,7 +103,9 @@ function Projects() {
                   src="/img/webscraper.webp"
                 />
                 <Card.Body>
-                  <Card.Title>FINRA's BrokerCheck&#174; Web Scraper</Card.Title>
+                  <Card.Title>
+                    FINRA&apos;s BrokerCheck&#174; Web Scraper
+                  </Card.Title>
                   <Card.Text>
                     Web scraping application for automating broker data
                     collection. Written using the python beautiful soup library
@@ -134,9 +135,9 @@ function Projects() {
                 <Card.Body>
                   <Card.Title>Java Wordle Solver</Card.Title>
                   <Card.Text>
-                    Solves the daily "Wordle" puzzle via process of elemination,
-                    written in Java. Achieves an average of 3.76 guesses, only
-                    0.35 off from MIT's research team.
+                    Solves the daily &quot;Wordle&quot; puzzle via process of
+                    elemination, written in Java. Achieves an average of 3.76
+                    guesses, only 0.35 off from MIT&apos;s research team.
                   </Card.Text>
                 </Card.Body>
               </Card>

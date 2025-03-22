@@ -10,7 +10,7 @@ function Home() {
       </div>
       <div style={{ textSize: "2.071em" }}>
         <p>
-          I'm a fourth year CS student at Virginia Tech studying OS kernel
+          I&apos;m a fourth year CS student at Virginia Tech studying OS kernel
           enginnering, backend Java programming, full-stack development, and
           AI/ML.
         </p>
@@ -18,8 +18,8 @@ function Home() {
       <div style={{ textSize: "1.701em" }}>
         <p>
           With over {yearsOfExperience}+ years of hands-on software development
-          experience, I've refined my skills across the entire stack and applied
-          them to build robust and scalable applications.
+          experience, I&apos;ve refined my skills across the entire stack and
+          applied them to build robust and scalable applications.
           <br />
           <br />
           My academic focus is on the design and optimization of operating
